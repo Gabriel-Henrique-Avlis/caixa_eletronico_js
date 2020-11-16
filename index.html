@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="calculadora">
+                <div class="usuario">
+                    <h1 style="margin-left: 20px; margin-top: 10px;">ATM</h1>
+                    <h2 style="margin-right: 20px; margin-top: 10px;">Bem-vindo</h2>
+                </div>
+                <div>
+                    <h3 id="usuario" style="text-align: right; margin-right: 20px;"></h3>
+                </div>
+                <div>
+                    <p style="position: relative; left: 50px; top: 25px;">
+                        <b>Saldo</b>
+                    </p>
+                    <p style="position: relative; left: 50px;">
+                        <b style="color: darkred;">$</b>99999999.00 <input type="text" id="resultado" disabled class="resultado_estilo">
+                    </p>
+                    <p style="position: relative; left: 50px;">
+                        Notas Disponíveis
+                    </p>
+                    <p style="position: relative; left: 50px;">
+                        <button>$ 100.00</button>
+                        <button>$ 50.00</button>
+                        <button>$ 20.00</button>
+                        <button>$ 10.00</button>
+                    </p>
+                </div>
+                <div class="numeros-row" style="margin-left: 50px;">
+                    <button class="botoes" id="numero-7">7</button>
+                    <button class="botoes" id="numero-8">8</button>
+                    <button class="botoes" id="numero-9">9</button>
+                </div>
+                <div class="numeros-row"  style="margin-left: 50px;">
+                    <button class="botoes" id="numero-4">4</button>
+                    <button class="botoes" id="numero-5">5</button>
+                    <button class="botoes" id="numero-6">6</button>
+                </div>
+                <div class="numeros-row"  style="margin-left: 50px;">
+                    <button class="botoes" id="numero-1">1</button>
+                    <button class="botoes" id="numero-2">2</button>
+                    <button class="botoes" id="numero-3">3</button>
+                </div>
+                <div class="numeros-row" style="margin-left: -20px;">
+                    <input id="notas" type="text" disabled style="position: relative; left: 50px; top: -80px; padding-right: 50px; padding-bottom: 50px; background-color: ivory;" size="32">
+                    <button class="botoes" id="calcular" style="background-color: red; position: relative; top: -10px; left: 205px;">Confirmar</button>
+                    <button class="botoes" id="numero-0" style="position: relative; top: -10px; left: 205px;">0</button>
+                    <button class="botoes" id="limpar" style="background-color: gray; position: relative; top: -10px; left: 205px;">Limpar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

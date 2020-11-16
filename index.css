@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body,
+html {
+  font: 16px "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  background-color: darkgray;
+  height: 600px;
+
+}
+
+.container {
+    margin-left: 60px;
+    max-width: 1000px;
+    width: 100%;
+    padding: 0 20px;
+    height: 80px;
+    color: #fff;
+}
+
+.calculadora {
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    background: rgb(3,8,92);
+    background: linear-gradient(90deg, rgba(3,8,92,1) 0%, rgba(18,3,102,1) 35%, rgba(14,0,255,1) 100%);
+    border-radius: 5px;;
+  }
+
+.resultado_estilo {
+    position: relative;
+    top: 50px;
+    left: 300px;
+    width: 60%;
+    margin-left: -1%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: ivory;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+.botoes {
+  position: relative;
+  top: -15px;
+  left: 450px;
+  width: 50px;
+  height: 50px;
+  margin-right: 50px;
+  background-color: rgb(18, 22, 78);
+  padding: 30px 80px;
+  border: 2px ridge  rgb(45, 202, 255);
+  font-weight: bolder;
+  color: aliceblue;
+}
+
+.botoes:hover{
+  background-color: rgb(18, 22, 78);
+  border: 2px ridge darkslategray;
+  cursor: pointer;
+}
+
+.numeros-row {
+    position: relative;
+    top: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.usuario{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
