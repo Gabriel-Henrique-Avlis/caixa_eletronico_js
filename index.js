@@ -70,12 +70,14 @@ document.getElementById("calcular").addEventListener("click", function(){
         resultado.value = "INSIRA UM VALOR VÁLIDO"; 
     }
 
+    else if (resultado.value === "0"){
+        resultado.value = "INSIRA UM VALOR VÁLIDO"; 
+    }
+
     if(Number(resultado.value) === 100){
         quoficiente_100 = resultado.value / nota_100;
         notas.value = notas.value + quoficiente_100 + "x" + " R$ 100 ";
     }
-
-
     
     else if(resto_100 === 0 && resultado.value > 100){
         quoficiente_100 = Math.floor(resultado.value / nota_100);
@@ -184,11 +186,34 @@ document.getElementById("calcular").addEventListener("click", function(){
         notas.value = quoficiente_10 + "x" + " R$ 10";
     }
     
+    document.getElementById("numero-0").disabled = true;
+    document.getElementById("numero-1").disabled = true;
+    document.getElementById("numero-2").disabled = true;
+    document.getElementById("numero-3").disabled = true;
+    document.getElementById("numero-4").disabled = true;
+    document.getElementById("numero-5").disabled = true;
+    document.getElementById("numero-6").disabled = true;
+    document.getElementById("numero-7").disabled = true;
+    document.getElementById("numero-8").disabled = true;
+    document.getElementById("numero-9").disabled = true;
+    document.getElementById("calcular").disabled = true;
 
+    document.getElementById("limpar").style.backgroundColor = "green";
 });
 
 limpar.addEventListener("click", function(){
     notas.value = "";
     resultado.value = "";
-    document.getElementById("limpar").style.backgroundColor = "rgb(23, 66, 146)";
+    document.getElementById("numero-0").disabled = false;
+    document.getElementById("numero-1").disabled = false;
+    document.getElementById("numero-2").disabled = false;
+    document.getElementById("numero-3").disabled = false;
+    document.getElementById("numero-4").disabled = false;
+    document.getElementById("numero-5").disabled = false;
+    document.getElementById("numero-6").disabled = false;
+    document.getElementById("numero-7").disabled = false;
+    document.getElementById("numero-8").disabled = false;
+    document.getElementById("numero-9").disabled = false;
+    document.getElementById("calcular").disabled = false;
+    document.getElementById("limpar").style.backgroundColor = "gray";
 })
