@@ -65,9 +65,11 @@ document.getElementById("calcular").addEventListener("click", function(){
 
     if (resto_10 != 0 && resto_20 != 0 && resto_50 != 0 && resto_100 != 0){
         resultado.value = "NÃO HÁ NOTAS DISPONÍVEIS";
+        notas.value = "";
     }
     else if (resultado.value === ""){
         resultado.value = "INSIRA UM VALOR VÁLIDO"; 
+        notas.value = "";
     }
 
     else if (resultado.value === "0"){
@@ -106,6 +108,9 @@ document.getElementById("calcular").addEventListener("click", function(){
         if(resto_100 === 90){
             quoficiente_20 = Math.floor((resultado.value % nota_50) / nota_20);
             notas.value = notas.value + " " + quoficiente_20 + " x " + "R$ 20"
+        }
+        if(resto_100 != 1){
+            notas.value = "";
         }
     }
 
