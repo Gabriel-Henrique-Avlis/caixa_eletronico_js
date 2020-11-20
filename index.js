@@ -109,7 +109,7 @@ document.getElementById("calcular").addEventListener("click", function(){
             quoficiente_20 = Math.floor((resultado.value % nota_50) / nota_20);
             notas.value = notas.value + " " + quoficiente_20 + " x " + "R$ 20"
         }
-        if(resto_100 != 1){
+        if(resto_100 < 1){
             notas.value = "";
         }
     }
